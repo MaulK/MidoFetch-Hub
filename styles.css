@@ -44,22 +44,30 @@ nav a {
     padding: 50px;
 }
 
-.services {
+.services, .contact-form {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.service {
+.service, .contact-form {
+    width: 300px;
     background-color: #333;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #008CBA;
     color: white;
     padding: 10px;
     border: none;
@@ -67,7 +75,42 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #007999;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #555; /* Different color for Contact Us */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #666; /* Different border color for Contact Us */
+    border-radius: 5px;
+    background-color: #444; /* Different background color for Contact Us */
+    color: #fff;
+}
+
+.contact-form button {
+    background-color: #008CBA; /* Different color for Contact Us button */
+}
+
+.contact-form button:hover {
+    background-color: #007999; /* Different hover color for Contact Us button */
 }
 
 footer {
