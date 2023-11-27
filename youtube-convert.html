@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>YouTube Downloader</title>
+</head>
+<body>
+    <header>
+        <h1>MidoFetch Hub</h1>
+        <p>Welcome to the future of the web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <h2>YouTube Downloader</h2>
+        <p>Paste the YouTube video link below and click the convert button to download.</p>
+        <form id="youtubeForm">
+            <label for="youtubeLink">YouTube Video Link:</label>
+            <input type="text" id="youtubeLink" name="youtubeLink" required>
+            <button type="button" onclick="convertYouTube()">Convert</button>
+        </form>
+    </section>
+    <a href="services.html"><button>Back to Services</button></a>
+    <footer>
+        <p>&copy; 2023 Futuristic Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="youtube-script.js"></script>
+</body>
+</html>
