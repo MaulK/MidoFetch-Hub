@@ -17,18 +17,20 @@ header h1 {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #444;
 }
 
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 nav li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -37,6 +39,29 @@ nav a {
     color: #fff;
     font-weight: bold;
     font-size: 1.2em;
+    position: relative;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover:before {
+    visibility: visible;
+    background-color: #ffcc00;
+}
+
+nav a.active:before {
+    visibility: visible;
+    background-color: #ffcc00;
 }
 
 .main-content {
@@ -44,13 +69,15 @@ nav a {
     padding: 50px;
 }
 
-.services, .contact-form {
+.services,
+.contact-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.service, .contact-form {
+.service,
+.contact-form {
     width: 300px;
     background-color: #333;
     padding: 20px;
@@ -58,6 +85,13 @@ nav a {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover,
+.contact-form:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
 .service img {
@@ -106,15 +140,107 @@ button:hover {
 }
 
 .contact-form button {
-    background-color: #008CBA; /* Different color for Contact Us button */
+    background-color: #008CBA; 
 }
 
 .contact-form button:hover {
-    background-color: #007999; /* Different hover color for Contact Us button */
+    background-color: #007999; 
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
+}
+
+.about-card {
+    background-color: #f0ecec;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-card h2 {
+    color: #333;
+}
+
+.about-card p {
+    color: #555;
+}
+
+/* FB Button */
+.fb-glowing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #007bff, #ffffffcc, #007bff);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.fb-glowing-button:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+/* Tiktok Button */
+.tt-glowing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #00FFFF, #FF0000);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(255, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.tt-glowing-button:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 0, 0.7);
+}
+
+/* Instagram Button */
+.ig-glowing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #FFA500, #FF69B4, #800080);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 69, 182, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.ig-glowing-button:hover {
+    box-shadow: 0 0 20px rgba(255, 69, 182, 0.7);
+}
+
+/* Youtube Button */
+.yt-glowing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #FF0000, #ffffffcc, #FF0000);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.yt-glowing-button:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
 }
