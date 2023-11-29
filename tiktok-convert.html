@@ -22,15 +22,18 @@
     </nav>
 
     <section class="main-content">
-        <h2>Tiktok Downloader</h2>
-        <p>Paste the Tiktok video link below and click the convert button to download.</p>
-        <form id="tiktokForm">
-            <label for="tiktokLink">Tiktok Video Link:</label>
-            <input type="text" id="tiktokLink" name="tiktokLink" required>
-            <button type="button" onclick="convertTiktok()">Convert</button>
-        </form>
+        <div class="convert-forms">
+            <h2>Tiktok Downloader</h2>
+            <p>Paste the Tiktok video link below and click the convert button to download.</p>
+            <form id="tiktokForm">
+                <label for="tiktokLink">Tiktok Video Link:</label>
+                <input type="text" id="tiktokLink" name="tiktokLink" required>
+                <a href="#" id="convertButton" class="button">Convert</a>
+            </form>
+        </div>
     </section>
-    <a href="services.html"><button>Back to Services</button></a>
+    <a href="services.html" class="button">Back</a>
+
     <footer>
         <p>&copy; 2023 MidoFetch Hub. All rights reserved.</p>
     </footer>

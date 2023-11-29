@@ -57,12 +57,12 @@ nav a:before {
 
 nav a:hover:before {
     visibility: visible;
-    background-color: #ffcc00;
+    background-color: #FFEBB4;
 }
 
 nav a.active:before {
     visibility: visible;
-    background-color: #ffcc00;
+    background-color: #FFEBB4;
 }
 
 .main-content {
@@ -92,7 +92,7 @@ nav a.active:before {
 .service:hover,
 .contact-form:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px #FFBFA9;
 }
 
 .service img {
@@ -101,16 +101,25 @@ nav a.active:before {
     border-radius: 5px;
 }
 
-button {
-    background-color: #008CBA;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+.button{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 45px;
+    border: 3px solid #FFBFA9;
+    border-radius: 10px;
 }
-
-button:hover {
-    background-color: #007999;
+  
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+}
+  
+@keyframes pulsate {
+    0%{
+      box-shadow:
+        0 0 25px #FBFFB1,
+        0 0 50px #FFACAC;
+    }
 }
 
 .contact-form {
@@ -138,14 +147,6 @@ button:hover {
     border-radius: 5px;
     background-color: #444; /* Different background color for Contact Us */
     color: #fff;
-}
-
-.contact-form button {
-    background-color: #008CBA; 
-}
-
-.contact-form button:hover {
-    background-color: #007999; 
 }
 
 footer {
@@ -249,7 +250,7 @@ footer {
 /* Text Animation 1*/
 @keyframes lights {
     0% {
-      color: hsl(230, 40%, 80%);
+      color: #FBFFB1;
       text-shadow:
         0 0 1em hsla(320, 100%, 50%, 0.2),
         0 0 0.125em hsla(320, 100%, 60%, 0.3),
@@ -258,7 +259,7 @@ footer {
     }
     
     30% { 
-      color: hsl(230, 80%, 90%);
+      color: #FFEBB4;
       text-shadow:
         0 0 1em hsla(320, 100%, 50%, 0.5),
         0 0 0.125em hsla(320, 100%, 60%, 0.5),
@@ -267,7 +268,7 @@ footer {
     }
     
     40% { 
-      color: hsl(230, 100%, 95%);
+      color: #FFBFA9;
       text-shadow:
         0 0 1em hsla(320, 100%, 50%, 0.5),
         0 0 0.125em hsla(320, 100%, 90%, 0.5),
@@ -276,7 +277,7 @@ footer {
     }
     
     70% {
-      color: hsl(230, 80%, 90%);
+      color: #FFACAC;
       text-shadow:
         0 0 1em hsla(320, 100%, 50%, 0.5),
         0 0 0.125em hsla(320, 100%, 60%, 0.5),
@@ -285,14 +286,13 @@ footer {
     }
     
     100% {
-      color: hsl(230, 40%, 80%);
+      color: #FBFFB1;
       text-shadow:
         0 0 1em hsla(320, 100%, 50%, 0.2),
         0 0 0.125em hsla(320, 100%, 60%, 0.3),
         1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
         -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
     }
-    
 }
 
 .text-animation1 {
@@ -300,4 +300,42 @@ footer {
     font-size: 3.5rem;
     font-weight: 300;
     animation: lights 5s 750ms linear infinite;
+}
+
+.convert-forms {
+    background-color: #333;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  /* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Center the columns horizontally */
+.row {
+    margin: 0 auto;
+    text-align: center;
 }

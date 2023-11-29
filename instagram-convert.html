@@ -22,15 +22,17 @@
     </nav>
 
     <section class="main-content">
-        <h2>Instagram Downloader</h2>
-        <p>Paste the Instagram video link below and click the convert button to download.</p>
-        <form id="instagramForm">
-            <label for="instagramLink">Instagram Video Link:</label>
-            <input type="text" id="instagramLink" name="instagramLink" required>
-            <button type="button" onclick="convertInstagram()">Convert</button>
-        </form>
+        <div class="convert-forms">
+            <h2>Instagram Downloader</h2>
+            <p>Paste the Instagram video link below and click the convert button to download.</p>
+            <form id="instagramForm">
+                <label for="instagramLink">Instagram Video Link:</label>
+                <input type="text" id="instagramLink" name="instagramLink" required>
+                <a href="#" id="convertButton" class="button">Convert</a>
+            </form>
+        </div>
     </section>
-    <a href="services.html"><button>Back to Services</button></a>
+    <a href="services.html" class="button">Back</a>
     <footer>
         <p>&copy; 2023 MidoFetch Hub. All rights reserved.</p>
     </footer>

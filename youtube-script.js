@@ -1,3 +1,8 @@
+document.getElementById('convertButton').addEventListener('click', function() {
+    const videoUrl = document.getElementById('youtubeLink').value;
+    convertVideo(videoUrl);
+});
+
 function convertYoutube(videoUrl) {
     // Regular expression pattern to extract the video ID from the URL
     const videoIdPattern = /(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|user\/\S+|shorts\/|%5Cembed%5CUCIYj6CeLFs%5C?))([\w-]{11})/;
