@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector('header');
     const nav = document.querySelector('nav');
-    const mainContent = document.querySelector('.main-content'); 
-    
+    const mainContent = document.querySelector('.main-content');
+
     header.style.opacity = 0;
     nav.style.opacity = 0;
     mainContent.style.opacity = 0;
