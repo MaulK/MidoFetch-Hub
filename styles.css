@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin: 15px
 }
 
 nav a {
@@ -101,7 +101,7 @@ nav a.active:before {
     border-radius: 5px;
 }
 
-.button{
+.button {
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -109,16 +109,14 @@ nav a.active:before {
     border: 3px solid #FFBFA9;
     border-radius: 10px;
 }
-  
-.button:hover{
+
+.button:hover {
     animation: pulsate 1s ease-in-out;
 }
-  
+
 @keyframes pulsate {
-    0%{
-      box-shadow:
-        0 0 25px #FBFFB1,
-        0 0 50px #FFACAC;
+    0% {
+        box-shadow: 0 0 25px #FBFFB1, 0 0 50px #FFACAC;
     }
 }
 
@@ -127,7 +125,7 @@ nav a.active:before {
     margin: auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: #555; /* Different color for Contact Us */
+    background-color: #555;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,9 +141,9 @@ nav a.active:before {
     padding: 10px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    border: 1px solid #666; /* Different border color for Contact Us */
+    border: 1px solid #666;
     border-radius: 5px;
-    background-color: #444; /* Different background color for Contact Us */
+    background-color: #444;
     color: #fff;
 }
 
@@ -171,7 +169,9 @@ footer {
     color: #fff;
 }
 
+
 /* FB Button */
+
 .fb-glowing-button {
     display: inline-block;
     padding: 10px 20px;
@@ -190,7 +190,9 @@ footer {
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
 }
 
+
 /* Tiktok Button */
+
 .tt-glowing-button {
     display: inline-block;
     padding: 10px 20px;
@@ -209,7 +211,9 @@ footer {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 0, 0.7);
 }
 
+
 /* Instagram Button */
+
 .ig-glowing-button {
     display: inline-block;
     padding: 10px 20px;
@@ -228,7 +232,9 @@ footer {
     box-shadow: 0 0 20px rgba(255, 69, 182, 0.7);
 }
 
+
 /* Youtube Button */
+
 .yt-glowing-button {
     display: inline-block;
     padding: 10px 20px;
@@ -247,51 +253,29 @@ footer {
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
 }
 
+
 /* Text Animation 1*/
+
 @keyframes lights {
     0% {
-      color: #FBFFB1;
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+        color: #FBFFB1;
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
     }
-    
-    30% { 
-      color: #FFEBB4;
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    30% {
+        color: #FFEBB4;
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
     }
-    
-    40% { 
-      color: #FFBFA9;
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 90%, 0.5),
-        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    40% {
+        color: #FFBFA9;
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
     }
-    
     70% {
-      color: #FFACAC;
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+        color: #FFACAC;
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
     }
-    
     100% {
-      color: #FBFFB1;
-      text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+        color: #FBFFB1;
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
     }
 }
 
@@ -322,20 +306,96 @@ footer {
 
 .column {
     float: left;
-    width: 50%;
+    width: 100%;
+    /* Change width to 100% for responsiveness on small screens */
     padding: 15px;
-    box-sizing: border-box; /* Include padding in the width calculation */
-  }
-  
-  /* Clear floats after the columns */
+    box-sizing: border-box;
+}
+
+
+/* Clear floats after the columns */
+
 .row::after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Center the columns horizontally */
+}
+
+
+/* Center the columns horizontally */
+
 .row {
     margin: 0 auto;
     text-align: center;
+}
+
+
+/* Media Queries for Responsive Design */
+
+
+/* Tablets */
+
+@media (min-width: 768px) {
+    header {
+        padding: 30px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    .main-content {
+        padding: 30px;
+    }
+    .services,
+    .contact-form {
+        justify-content: center;
+        /* Center the cards */
+    }
+    .service,
+    .contact-form {
+        width: 45%;
+    }
+    .column {
+        width: 50%;
+    }
+}
+
+
+/* Phones */
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 5px;
+    }
+    nav a {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .services,
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+        /* Center the cards in a column */
+    }
+    .service,
+    .contact-form {
+        width: 75%;
+    }
+    .column {
+        width: 100%;
+    }
 }
