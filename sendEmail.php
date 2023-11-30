@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Server settings
         $mail->SMTPDebug = 0;                      // Enable verbose debug output (set to 2 for detailed debug)
         $mail->isSMTP();                            // Set mailer to use SMTP
-        $mail->Host       = 'smtp.example.com';    // Specify main and backup SMTP servers
+        $mail->Host       = 'smtp.gmail.com';    // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                   // Enable SMTP authentication
         $mail->Username   = 'your-email@example.com'; // SMTP username
         $mail->Password   = 'your-smtp-password';  // SMTP password
