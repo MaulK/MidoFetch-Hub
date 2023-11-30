@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         header.style.transition = 'opacity 1s ease-in-out';
         nav.style.transition = 'opacity 1s ease-in-out';
-        A
         mainContent.style.transition = 'opacity 1s ease-in-out';
         features.style.transition = 'opacity 1s ease-in-out';
 
