@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Contact Us</title>
 </head>
+
 <body>
     <header>
         <h1 class="text-animation1">MidoFetch Hub</h1>
@@ -25,19 +27,19 @@
         <h2>Contact Us</h2>
         <p>Have questions, suggestions, or feedback? We'd love to hear from you! Reach out to our support team at support@midofetchhub.com for assistance.</p>
         <div class="contact-form">
-            <form id="contactForm" action="sendEmail.php" method="post">
+            <form id="contactForm" onSubmit="sendEmail(); reset(); return false;">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" required></textarea>
-    
-                <a href="#" class="button">Submit</a>
+
+                <button type="submit" class="convert-button">Send</button>
             </form>
-        </div>  
+        </div>
     </section>
 
     <footer>
@@ -45,5 +47,26 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+
+                SecureToken: "f337fc26-1945-44ad-be79-223f7cd084b9",
+
+                To: 'midofetchhub@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Message",
+                Body: "Name: " + document.getElementById("name").value +
+                    "<br> Email: " + document.getElementById("email").value +
+                    "<br> Messages: " + document.getElementById("message").value
+
+            }).then(
+                message => alert("Message Sent Succesfully")
+            );
+        }
+    </script>
 </body>
+
 </html>

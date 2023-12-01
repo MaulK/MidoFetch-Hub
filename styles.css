@@ -82,7 +82,7 @@ nav a.active:before {
     width: 300px;
     background-color: #333;
     padding: 20px;
-    margin: 20px;
+    margin: 25px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -101,8 +101,9 @@ nav a.active:before {
     border-radius: 5px;
 }
 
-.button {
+.convert-button {
     display: inline-block;
+    background-color: #444;
     color: #fff;
     text-decoration: none;
     padding: 15px 45px;
@@ -110,7 +111,7 @@ nav a.active:before {
     border-radius: 10px;
 }
 
-.button:hover {
+.convert-button:hover {
     animation: pulsate 1s ease-in-out;
 }
 
